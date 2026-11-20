@@ -1056,6 +1056,9 @@ available starting at Vault version 1.4.
 
 - Configure [unauthenticated metrics access](https://www.vaultproject.io/docs/configuration/listener/tcp#configuring-unauthenticated-metrics-access)
 - Default value: false
+- Can be overridden per listener by setting `vault_unauthenticated_metrics_access`
+  inside a `vault_tcp_listeners` item, e.g. to allow unauthenticated metrics
+  only on a localhost listener while keeping the public listener closed.
 
 ### `vault_telemetry_usage_gauge_period`
 
